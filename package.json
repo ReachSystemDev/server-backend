@@ -1,0 +1,36 @@
+{
+	"name": "server-backend",
+	"version": "1.0.0",
+	"description": "Project summit",
+	"main": "index.js",
+	"scripts": {
+		"dev": "nodemon src/index.js --exec babel-node",
+		"build": "babel src --out-dir build",
+		"start": "node build/index.js"
+	},
+	"keywords": [],
+	"author": "Systems-x",
+	"license": "ISC",
+	"dependencies": {
+		"bcryptjs": "^2.4.3",
+		"connect-multiparty": "^2.2.0",
+		"core-js": "^3.8.1",
+		"cors": "^2.8.5",
+		"dotenv": "^8.2.0",
+		"express": "^4.17.1",
+		"helmet": "^4.2.0",
+		"jsonwebtoken": "^8.5.1",
+		"jwt-simple": "^0.5.6",
+		"moment": "^2.29.1",
+		"mongoose": "^5.10.15",
+		"morgan": "^1.10.0",
+		"regenerator-runtime": "^0.13.7"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.12.7",
+		"@babel/core": "^7.12.7",
+		"@babel/node": "^7.12.6",
+		"@babel/preset-env": "^7.12.7",
+		"nodemon": "^2.0.6"
+	}
+}
